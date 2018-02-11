@@ -114,7 +114,7 @@ class Search extends React.Component {
                       key={'suggestion-' + name}
                       tabindex="0"
                       onClick={() => this._onSuggestSelect(name)}
-                      onKeyDown={event => this._onSuggestKeyUp(event, name)}
+                      onKeyDown={event => this._onSuggestKeyDown(event, name)}
                     >
                       <Suggestion>
                         <h4>{name}</h4>
@@ -136,7 +136,7 @@ class Search extends React.Component {
     return text.length > 3;
   };
 
-  _onSuggestKeyUp = (event, name) => {
+  _onSuggestKeyDown = (event, name) => {
     if (event.key === 'Enter') {
       this._onSuggestSelect(name)
     } else if (event.key === 'ArrowDown' && event.target.nextSibling) {
