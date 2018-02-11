@@ -2,7 +2,7 @@
   "name": "autocomplete-exploration",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stefanoeb.github.io/autocomplete-exploration",
+  "homepage": "https://stefanoeb.github.io/got-character-index",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
